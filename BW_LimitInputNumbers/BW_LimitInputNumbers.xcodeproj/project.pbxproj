@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B7DF658215A0ACA00C531F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF657215A0ACA00C531F9 /* AppDelegate.m */; };
+		4B7DF65B215A0ACA00C531F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF65A215A0ACA00C531F9 /* ViewController.m */; };
+		4B7DF65E215A0ACA00C531F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7DF65C215A0ACA00C531F9 /* Main.storyboard */; };
+		4B7DF660215A0AD100C531F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7DF65F215A0AD100C531F9 /* Assets.xcassets */; };
+		4B7DF663215A0AD100C531F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B7DF661215A0AD100C531F9 /* LaunchScreen.storyboard */; };
+		4B7DF666215A0AD100C531F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF665215A0AD100C531F9 /* main.m */; };
+		4B7DF670215A0AD100C531F9 /* BW_LimitInputNumbersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF66F215A0AD100C531F9 /* BW_LimitInputNumbersTests.m */; };
+		4B7DF67B215A0AD100C531F9 /* BW_LimitInputNumbersUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF67A215A0AD100C531F9 /* BW_LimitInputNumbersUITests.m */; };
+		4B7DF68B215A0B6E00C531F9 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF68A215A0B6E00C531F9 /* NSString+Category.m */; };
+		4B7DF68E215A104B00C531F9 /* UITextField+LimitLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF68D215A104B00C531F9 /* UITextField+LimitLength.m */; };
+		4B7DF691215A1DA600C531F9 /* UITextView+LimitLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF690215A1DA600C531F9 /* UITextView+LimitLength.m */; };
+		4B7DF697215A1EB900C531F9 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7DF696215A1EB900C531F9 /* UITextView+Placeholder.m */; };
+		4BF679AE21BBD6970047187B /* BWTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF679AD21BBD6970047187B /* BWTextView.m */; };
+		4BF679B121BBF9BC0047187B /* BWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BF679B021BBF9BC0047187B /* BWTextField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B7DF66C215A0AD100C531F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B7DF64B215A0ACA00C531F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B7DF652215A0ACA00C531F9;
+			remoteInfo = BW_LimitInputNumbers;
+		};
+		4B7DF677215A0AD100C531F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B7DF64B215A0ACA00C531F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B7DF652215A0ACA00C531F9;
+			remoteInfo = BW_LimitInputNumbers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B7DF653215A0ACA00C531F9 /* BW_LimitInputNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BW_LimitInputNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7DF656215A0ACA00C531F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4B7DF657215A0ACA00C531F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4B7DF659215A0ACA00C531F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4B7DF65A215A0ACA00C531F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4B7DF65D215A0ACA00C531F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B7DF65F215A0AD100C531F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B7DF662215A0AD100C531F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B7DF664215A0AD100C531F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B7DF665215A0AD100C531F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B7DF66B215A0AD100C531F9 /* BW_LimitInputNumbersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BW_LimitInputNumbersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7DF66F215A0AD100C531F9 /* BW_LimitInputNumbersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BW_LimitInputNumbersTests.m; sourceTree = "<group>"; };
+		4B7DF671215A0AD100C531F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B7DF676215A0AD100C531F9 /* BW_LimitInputNumbersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BW_LimitInputNumbersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B7DF67A215A0AD100C531F9 /* BW_LimitInputNumbersUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BW_LimitInputNumbersUITests.m; sourceTree = "<group>"; };
+		4B7DF67C215A0AD100C531F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B7DF689215A0B6E00C531F9 /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		4B7DF68A215A0B6E00C531F9 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		4B7DF68C215A104B00C531F9 /* UITextField+LimitLength.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+LimitLength.h"; sourceTree = "<group>"; };
+		4B7DF68D215A104B00C531F9 /* UITextField+LimitLength.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+LimitLength.m"; sourceTree = "<group>"; };
+		4B7DF68F215A1DA600C531F9 /* UITextView+LimitLength.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+LimitLength.h"; sourceTree = "<group>"; };
+		4B7DF690215A1DA600C531F9 /* UITextView+LimitLength.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+LimitLength.m"; sourceTree = "<group>"; };
+		4B7DF695215A1EB800C531F9 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		4B7DF696215A1EB900C531F9 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		4BF679AC21BBD6970047187B /* BWTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWTextView.h; sourceTree = "<group>"; };
+		4BF679AD21BBD6970047187B /* BWTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWTextView.m; sourceTree = "<group>"; };
+		4BF679AF21BBF9BC0047187B /* BWTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWTextField.h; sourceTree = "<group>"; };
+		4BF679B021BBF9BC0047187B /* BWTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWTextField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B7DF650215A0ACA00C531F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B7DF668215A0AD100C531F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B7DF673215A0AD100C531F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B7DF64A215A0ACA00C531F9 = {
+			isa = PBXGroup;
+			children = (
+				4B7DF655215A0ACA00C531F9 /* BW_LimitInputNumbers */,
+				4B7DF66E215A0AD100C531F9 /* BW_LimitInputNumbersTests */,
+				4B7DF679215A0AD100C531F9 /* BW_LimitInputNumbersUITests */,
+				4B7DF654215A0ACA00C531F9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B7DF654215A0ACA00C531F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B7DF653215A0ACA00C531F9 /* BW_LimitInputNumbers.app */,
+				4B7DF66B215A0AD100C531F9 /* BW_LimitInputNumbersTests.xctest */,
+				4B7DF676215A0AD100C531F9 /* BW_LimitInputNumbersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B7DF655215A0ACA00C531F9 /* BW_LimitInputNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				4B7DF688215A0B4C00C531F9 /* BW_InputLimit */,
+				4B7DF656215A0ACA00C531F9 /* AppDelegate.h */,
+				4B7DF657215A0ACA00C531F9 /* AppDelegate.m */,
+				4B7DF659215A0ACA00C531F9 /* ViewController.h */,
+				4B7DF65A215A0ACA00C531F9 /* ViewController.m */,
+				4B7DF65C215A0ACA00C531F9 /* Main.storyboard */,
+				4B7DF65F215A0AD100C531F9 /* Assets.xcassets */,
+				4B7DF661215A0AD100C531F9 /* LaunchScreen.storyboard */,
+				4B7DF664215A0AD100C531F9 /* Info.plist */,
+				4B7DF665215A0AD100C531F9 /* main.m */,
+			);
+			path = BW_LimitInputNumbers;
+			sourceTree = "<group>";
+		};
+		4B7DF66E215A0AD100C531F9 /* BW_LimitInputNumbersTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B7DF66F215A0AD100C531F9 /* BW_LimitInputNumbersTests.m */,
+				4B7DF671215A0AD100C531F9 /* Info.plist */,
+			);
+			path = BW_LimitInputNumbersTests;
+			sourceTree = "<group>";
+		};
+		4B7DF679215A0AD100C531F9 /* BW_LimitInputNumbersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B7DF67A215A0AD100C531F9 /* BW_LimitInputNumbersUITests.m */,
+				4B7DF67C215A0AD100C531F9 /* Info.plist */,
+			);
+			path = BW_LimitInputNumbersUITests;
+			sourceTree = "<group>";
+		};
+		4B7DF688215A0B4C00C531F9 /* BW_InputLimit */ = {
+			isa = PBXGroup;
+			children = (
+				4B7DF689215A0B6E00C531F9 /* NSString+Category.h */,
+				4B7DF68A215A0B6E00C531F9 /* NSString+Category.m */,
+				4B7DF68C215A104B00C531F9 /* UITextField+LimitLength.h */,
+				4B7DF68D215A104B00C531F9 /* UITextField+LimitLength.m */,
+				4B7DF68F215A1DA600C531F9 /* UITextView+LimitLength.h */,
+				4B7DF690215A1DA600C531F9 /* UITextView+LimitLength.m */,
+				4B7DF695215A1EB800C531F9 /* UITextView+Placeholder.h */,
+				4B7DF696215A1EB900C531F9 /* UITextView+Placeholder.m */,
+				4BF679AC21BBD6970047187B /* BWTextView.h */,
+				4BF679AD21BBD6970047187B /* BWTextView.m */,
+				4BF679AF21BBF9BC0047187B /* BWTextField.h */,
+				4BF679B021BBF9BC0047187B /* BWTextField.m */,
+			);
+			path = BW_InputLimit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B7DF652215A0ACA00C531F9 /* BW_LimitInputNumbers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B7DF67F215A0AD100C531F9 /* Build configuration list for PBXNativeTarget "BW_LimitInputNumbers" */;
+			buildPhases = (
+				4B7DF64F215A0ACA00C531F9 /* Sources */,
+				4B7DF650215A0ACA00C531F9 /* Frameworks */,
+				4B7DF651215A0ACA00C531F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BW_LimitInputNumbers;
+			productName = BW_LimitInputNumbers;
+			productReference = 4B7DF653215A0ACA00C531F9 /* BW_LimitInputNumbers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B7DF66A215A0AD100C531F9 /* BW_LimitInputNumbersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B7DF682215A0AD100C531F9 /* Build configuration list for PBXNativeTarget "BW_LimitInputNumbersTests" */;
+			buildPhases = (
+				4B7DF667215A0AD100C531F9 /* Sources */,
+				4B7DF668215A0AD100C531F9 /* Frameworks */,
+				4B7DF669215A0AD100C531F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B7DF66D215A0AD100C531F9 /* PBXTargetDependency */,
+			);
+			name = BW_LimitInputNumbersTests;
+			productName = BW_LimitInputNumbersTests;
+			productReference = 4B7DF66B215A0AD100C531F9 /* BW_LimitInputNumbersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B7DF675215A0AD100C531F9 /* BW_LimitInputNumbersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B7DF685215A0AD100C531F9 /* Build configuration list for PBXNativeTarget "BW_LimitInputNumbersUITests" */;
+			buildPhases = (
+				4B7DF672215A0AD100C531F9 /* Sources */,
+				4B7DF673215A0AD100C531F9 /* Frameworks */,
+				4B7DF674215A0AD100C531F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B7DF678215A0AD100C531F9 /* PBXTargetDependency */,
+			);
+			name = BW_LimitInputNumbersUITests;
+			productName = BW_LimitInputNumbersUITests;
+			productReference = 4B7DF676215A0AD100C531F9 /* BW_LimitInputNumbersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B7DF64B215A0ACA00C531F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = XiongBenWang;
+				TargetAttributes = {
+					4B7DF652215A0ACA00C531F9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4B7DF66A215A0AD100C531F9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4B7DF652215A0ACA00C531F9;
+					};
+					4B7DF675215A0AD100C531F9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4B7DF652215A0ACA00C531F9;
+					};
+				};
+			};
+			buildConfigurationList = 4B7DF64E215A0ACA00C531F9 /* Build configuration list for PBXProject "BW_LimitInputNumbers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B7DF64A215A0ACA00C531F9;
+			productRefGroup = 4B7DF654215A0ACA00C531F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B7DF652215A0ACA00C531F9 /* BW_LimitInputNumbers */,
+				4B7DF66A215A0AD100C531F9 /* BW_LimitInputNumbersTests */,
+				4B7DF675215A0AD100C531F9 /* BW_LimitInputNumbersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B7DF651215A0ACA00C531F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7DF663215A0AD100C531F9 /* LaunchScreen.storyboard in Resources */,
+				4B7DF660215A0AD100C531F9 /* Assets.xcassets in Resources */,
+				4B7DF65E215A0ACA00C531F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B7DF669215A0AD100C531F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B7DF674215A0AD100C531F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B7DF64F215A0ACA00C531F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7DF68E215A104B00C531F9 /* UITextField+LimitLength.m in Sources */,
+				4B7DF697215A1EB900C531F9 /* UITextView+Placeholder.m in Sources */,
+				4B7DF65B215A0ACA00C531F9 /* ViewController.m in Sources */,
+				4B7DF666215A0AD100C531F9 /* main.m in Sources */,
+				4B7DF658215A0ACA00C531F9 /* AppDelegate.m in Sources */,
+				4BF679B121BBF9BC0047187B /* BWTextField.m in Sources */,
+				4B7DF68B215A0B6E00C531F9 /* NSString+Category.m in Sources */,
+				4B7DF691215A1DA600C531F9 /* UITextView+LimitLength.m in Sources */,
+				4BF679AE21BBD6970047187B /* BWTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B7DF667215A0AD100C531F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7DF670215A0AD100C531F9 /* BW_LimitInputNumbersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B7DF672215A0AD100C531F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7DF67B215A0AD100C531F9 /* BW_LimitInputNumbersUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B7DF66D215A0AD100C531F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B7DF652215A0ACA00C531F9 /* BW_LimitInputNumbers */;
+			targetProxy = 4B7DF66C215A0AD100C531F9 /* PBXContainerItemProxy */;
+		};
+		4B7DF678215A0AD100C531F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B7DF652215A0ACA00C531F9 /* BW_LimitInputNumbers */;
+			targetProxy = 4B7DF677215A0AD100C531F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B7DF65C215A0ACA00C531F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B7DF65D215A0ACA00C531F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B7DF661215A0AD100C531F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B7DF662215A0AD100C531F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B7DF67D215A0AD100C531F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4B7DF67E215A0AD100C531F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B7DF680215A0AD100C531F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88DC935WCL;
+				INFOPLIST_FILE = BW_LimitInputNumbers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianmy.hhscNW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B7DF681215A0AD100C531F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88DC935WCL;
+				INFOPLIST_FILE = BW_LimitInputNumbers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianmy.hhscNW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B7DF683215A0AD100C531F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BW_LimitInputNumbersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benwang.lottery.BW-LimitInputNumbersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BW_LimitInputNumbers.app/BW_LimitInputNumbers";
+			};
+			name = Debug;
+		};
+		4B7DF684215A0AD100C531F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BW_LimitInputNumbersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benwang.lottery.BW-LimitInputNumbersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BW_LimitInputNumbers.app/BW_LimitInputNumbers";
+			};
+			name = Release;
+		};
+		4B7DF686215A0AD100C531F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BW_LimitInputNumbersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benwang.lottery.BW-LimitInputNumbersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BW_LimitInputNumbers;
+			};
+			name = Debug;
+		};
+		4B7DF687215A0AD100C531F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BW_LimitInputNumbersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.benwang.lottery.BW-LimitInputNumbersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BW_LimitInputNumbers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B7DF64E215A0ACA00C531F9 /* Build configuration list for PBXProject "BW_LimitInputNumbers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B7DF67D215A0AD100C531F9 /* Debug */,
+				4B7DF67E215A0AD100C531F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B7DF67F215A0AD100C531F9 /* Build configuration list for PBXNativeTarget "BW_LimitInputNumbers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B7DF680215A0AD100C531F9 /* Debug */,
+				4B7DF681215A0AD100C531F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B7DF682215A0AD100C531F9 /* Build configuration list for PBXNativeTarget "BW_LimitInputNumbersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B7DF683215A0AD100C531F9 /* Debug */,
+				4B7DF684215A0AD100C531F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B7DF685215A0AD100C531F9 /* Build configuration list for PBXNativeTarget "BW_LimitInputNumbersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B7DF686215A0AD100C531F9 /* Debug */,
+				4B7DF687215A0AD100C531F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B7DF64B215A0ACA00C531F9 /* Project object */;
+}
