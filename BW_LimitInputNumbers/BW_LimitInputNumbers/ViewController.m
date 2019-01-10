@@ -13,7 +13,7 @@
 
 NSInteger maxTFNum = 30;
 
-NSInteger maxTVNum = 30;
+NSInteger maxTVNum = 200;
 
 @interface ViewController ()<BWTextFieldDelegate,BWTextViewDelegate>
 

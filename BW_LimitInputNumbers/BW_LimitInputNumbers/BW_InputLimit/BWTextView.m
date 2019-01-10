@@ -113,6 +113,8 @@
             //文字数量超出最大限制数量
         }
     }
+    //解决textView复制粘贴内容偏移导致文字显示不全的bug
+    [self scrollRectToVisible:CGRectMake(0, self.contentSize.height, self.contentSize.width, 10) animated:YES];
     //执行自定义代理方法
     [self textViewValueDidChanged:textView];
 }
