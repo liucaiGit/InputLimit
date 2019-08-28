@@ -1,4 +1,3 @@
-# InputLimit
 ##  UITextView UITextField限制输入字数以及精准剩余字数显示
 在日常项目开发中，我们经常用到UITextView UITextField这两个控件，今天我们来讲讲如何方便简单的限制这两个控件的输入字数以及精准显示剩余字数。
 
@@ -93,14 +92,21 @@
 
  - (void)bwTextViewDidEndEditing:(UITextView *)textView;
 ```
-接下来讲讲UITextField，实现的原理是一样的，不过UITextFieldDelegate中并没有暴露出类似UITextView:- (void)textViewDidChange:(UITextView *)textView这样的方法，为了实现类似的功能，我在自定义的UITextField中添加了实时监听UITextField内容变化的通知，并在通知方法中实现截取子串的操作：
+接下来讲讲UITextField，实现的原理是一样的，不过UITextFieldDelegate中并没有暴露出类似UITextView:- (void)textViewDidChange:(UITextView *)textView这样的方法，为了实现类似的功能，我在自定义的UITextField中添加了UITextField内容变化的事件，并在监听方法中实现截取子串的操作，这里将通知注释掉是因为在实际开发中，前一个页面如果也使用了BWTextField，而通知又是一对多的形式，会造成两个BWTextField互相错乱：
     
 
 ```
-- (void)setTfLimitNumber:(NSInteger)tfLimitNumber {
-    _tfLimitNumber = tfLimitNumber;
-    //添加通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChanged) name:UITextFieldTextDidChangeNotification object:nil];
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.delegate = self;
+        self.shouldForbidSystemEmoji = YES;
+        self.returnKeyDone = YES;
+        //添加通知
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChanged) name:UITextFieldTextDidChangeNotification object:nil];
+        [self addTarget:self action:@selector(textFieldDidChanged) forControlEvents:UIControlEventEditingChanged];
+    }
+    return self;
 }
 ```
 ```
