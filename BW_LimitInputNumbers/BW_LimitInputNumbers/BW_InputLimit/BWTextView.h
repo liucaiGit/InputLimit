@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol BWTextViewDelegate<NSObject>
+@class BWTextView;
 
+@protocol BWTextViewDelegate<NSObject>
+@optional;
 - (void)bwTextViewDidChanged:(UITextView *)textView;
 
 - (BOOL)bwTextView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text;

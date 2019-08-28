@@ -18,18 +18,27 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (instancetype)init {
-    self = [super init];
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
     if (self) {
         self.delegate = self;
+        self.shouldForbidSystemEmoji = YES;
+        self.returnKeyDone = YES;
+        //添加通知
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChanged) name:UITextFieldTextDidChangeNotification object:nil];
+        [self addTarget:self action:@selector(textFieldDidChanged) forControlEvents:UIControlEventEditingChanged];
     }
     return self;
 }
 
 - (void)setTfLimitNumber:(NSInteger)tfLimitNumber {
     _tfLimitNumber = tfLimitNumber;
-    //添加通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidChanged) name:UITextFieldTextDidChangeNotification object:nil];
+}
+
+- (void)setReturnKeyDone:(BOOL)returnKeyDone {
+    if (returnKeyDone) {
+        self.returnKeyType = UIReturnKeyDone;
+    }
 }
 
 # pragma mark - < UITextFieldDelegate >
@@ -99,11 +108,14 @@
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    if (self.returnKeyDone) {
-        [textField resignFirstResponder];
-        return NO;
+    if (self.tfDelegate && [self.tfDelegate respondsToSelector:@selector(bwTextFieldShouldReturn:)]) {
+        [self.tfDelegate bwTextFieldShouldReturn:textField];
     }
-    return YES;
+//    if (self.returnKeyDone) {
+//        return NO;
+//    }
+    [textField resignFirstResponder];
+    return NO;
 }
 
 # pragma mark - Notification

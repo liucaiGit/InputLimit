@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol BWTextFieldDelegate<NSObject>
-
+@optional
 - (BOOL)bwTextFieldShouldBeginEditing:(UITextField *)textField;
 
 - (void)bwTextFieldDidBeginEditing:(UITextField *)textField;
@@ -22,7 +22,7 @@
 
 - (BOOL)bwTextFieldShouldClear:(UITextField *)textField;
 
-- (BOOL)bwTextFieldShouldReturn:(UITextField *)textField;
+- (void)bwTextFieldShouldReturn:(UITextField *)textField;
 
 - (void)bwTextFieldDidChanged:(UITextField *)textField;
 
